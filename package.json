@@ -1,0 +1,27 @@
+{
+    "name": "champ-input-file",
+    "displayName": "Champ Input File",
+    "publisher": "Ravindra Shinde",
+    "repository": "https://github.com/neelravi/champ-input-vscode-extention",
+    "description": "",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "champ_input",
+            "aliases": ["champ-input", "champ_input", "champ input"],
+            "extensions": ["inp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "champ_input",
+            "scopeName": "source.champ_input",
+            "path": "./syntaxes/champ.tmLanguage.json"
+        }]
+    }
+}
